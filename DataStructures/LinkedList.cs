@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-    public class LinkedList<T> : ILinkable
+    public class LinkedList<T>
     {
         protected class ListNode<T>
         {
@@ -81,15 +81,5 @@ namespace DataStructures
                 throw new IndexOutOfRangeException();
             temp.Next = temp.Next.Next;
         }
-        //internal ListNode<T> getNode(object list, T value)
-        //{
-        //    if (list.GetType() == typeof(DoublyLinkedList<T>))
-        //    {
-        //        return DoublyLinkedList<T>.createNode(value);
-        //    }
-        //    else
-        //        return new ListNode<T>(value);
-        //}
     }
-    
 }

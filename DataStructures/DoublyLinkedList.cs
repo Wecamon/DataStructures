@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-    public class DoublyLinkedList<T> : LinkedList<T>, ILinkable
+    public class DoublyLinkedList<T> : LinkedList<T>
     {
         protected class DoublyNode<T> : ListNode<T>
         {
